@@ -127,7 +127,10 @@ If you're running macOS >= 10.12 and previously stored your git SSH-Key in the k
 #### Solution
 
 Open `~/.ssh/config` (if it doesn't exist create it)
-And add or modify:  `AddKeysToAgent yes`, save and close.
+
+Add or modify:  `AddKeysToAgent yes`
+
+Save the file, and close it.
 
 To add your SSH-Key to the keychain, you have to run a simple git command like `git fetch`.
 Now your credentials should be stored in the keychain and you are able to use `np` again.
